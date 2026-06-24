@@ -18,7 +18,15 @@ export default function() {
   );
 
   /* Hero Section */
-  ScrollReveal().reveal('.hero-title', 
+  ScrollReveal().reveal('.hero-image', 
+    assignProps(
+      {
+        delay: 300,
+        origin: 'bottom'
+      }, defaultProps)
+  );
+
+  ScrollReveal().reveal('.hero-content', 
     assignProps(
       { 
         delay: 500, 
@@ -35,7 +43,7 @@ export default function() {
   );
 
   /* About Section */
-  ScrollReveal().reveal('.about-wrapper__image', 
+  ScrollReveal().reveal('.about-hero__image', 
     assignProps(
       {
         delay: 600,
